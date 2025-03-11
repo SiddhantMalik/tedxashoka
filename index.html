@@ -12,6 +12,11 @@
 </head>
 <body>
     <nav class="navbar">
+        <div class="burger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         <div class="nav-brand">
             <span>TEDx</span>AshokaUniversity
         </div>
@@ -22,11 +27,6 @@
             <button class="nav-button" onclick="showSection('team')">Team</button>
         </div>
     </nav>
-    <div class="burger-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
     
     <div id="home" class="content-section active" style="position: relative; text-align: center; padding: 0;">
         <!-- Background image spanning the full viewport -->
@@ -229,31 +229,35 @@
             </div>
         </div>
     </div>
-    <footer>
-        <div class="container" style="text-align: center;">
-            <div style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap;">
-                <div style="max-width: 300px; word-wrap: break-word;">
-                    <p>Address: Plot No. 2, Rajiv Gandhi Education City, National Capital Region P.O. Rai, Sonepat Haryana-131029 (India)</p>
-                </div>
-                <div>
-                    <p>Contacts: +91 79073 71126,  +91 97175 26555</p>
-                    <a href="mailto:tedx@ashoka.edu.in" class="contact-button">tedx@ashoka.edu.in</a>
-                </div>
-                <div class="socials" style="display: flex; gap: 10px; align-items: center;">
-                    <a href="https://linkedin.com/company/tedxashokauniversity" target="_blank">
-                        <img src="linkedin-icon.png" alt="LinkedIn" class="social-icon" style="width: 30px; height: 30px; filter: invert(1);">
-                    </a>
-                    <a href="https://www.instagram.com/tedxashokauniv/" target="_blank">
-                        <img src="instagram-icon.png" alt="Instagram" class="social-icon" style="width: 30px; height: 30px; filter: invert(1);">
-                    </a>
-                </div>
-            </div>
-            <div style="margin-top: 10px;"></div>
-            <p>&copy; 2025 TEDxAshokaUniversity. All rights reserved.</p>
-            <p>Designed by Siddhant Malik</p>
+<!-- Replace the existing footer content -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Address</h4>
+            <p>Plot No. 2, Rajiv Gandhi Education City, National Capital Region P.O. Rai, Sonepat Haryana-131029 (India)</p>
         </div>
-
-    </footer>
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p>+91 79073 71126, +91 97175 26555</p>
+            <a href="mailto:tedx@ashoka.edu.in" class="contact-button">tedx@ashoka.edu.in</a>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/company/tedxashokauniversity" target="_blank">
+                    <img src="linkedin-icon.png" alt="LinkedIn" class="social-icon" style="filter: invert(1);">
+                </a>
+                <a href="https://www.instagram.com/tedxashokauniv/" target="_blank">
+                    <img src="instagram-icon.png" alt="Instagram" class="social-icon" style="filter: invert(1);">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 TEDxAshokaUniversity. All rights reserved.</p>
+        <p>Designed by Siddhant Malik</p>
+    </div>
+</footer>
 
     <script>
         function countdown() {
