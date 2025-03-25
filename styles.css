@@ -630,7 +630,7 @@ footer {
     .team-section h3 {
         font-size: 1.5rem;
     }
-}
+
 
 @media screen and (max-width: 768px) {
     .navbar {
@@ -691,7 +691,6 @@ footer {
 }
 
 /* Add this to the bottom of your styles.css file */
-
 /* Modal Styles */
 .modal {
     display: none;
@@ -735,18 +734,17 @@ footer {
     cursor: pointer;
 }
 
-.form-group {
-    margin-bottom: 25px;
-}
-
-.form-group label {
+/* Direct styling for form elements */
+#ticket-form label {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
     color: #fff;
+    margin-top: 20px;
 }
 
-.form-group input {
+#ticket-form input,
+#ticket-form textarea {
     width: 100%;
     padding: 12px;
     border: none;
@@ -757,9 +755,16 @@ footer {
     font-size: 16px;
     box-sizing: border-box;
     transition: background-color 0.3s;
+    margin-bottom: 15px;
 }
 
-.form-group input:focus {
+#ticket-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+#ticket-form input:focus,
+#ticket-form textarea:focus {
     outline: none;
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.3);
@@ -777,6 +782,7 @@ footer {
     font-weight: 600;
     width: 100%;
     transition: all 0.3s;
+    margin-top: 10px;
 }
 
 .submit-button:hover {
