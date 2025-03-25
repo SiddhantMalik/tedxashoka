@@ -53,9 +53,9 @@
         </div>
 
         <!-- Buy Tickets Button -->
-        <a href="https://www.tedxashokauniversity.com/tickets" class="buy-tickets-button">
-            Buy Tickets
-        </a>
+        <button class="buy-tickets-button">
+            Register Now!
+        </button>
       </div>
 
     <div id="about" class="content-section">
@@ -78,25 +78,43 @@
 
     <div id="speakers" class="content-section">
         <div class="container">
-            <!-- <h2>Speakers</h2> -->
             <div class="speaker">
-                <img src="Speaker1.avif" alt="Speaker 1" class="speaker-image">
+                <img src="speakers/1.png" alt="Speaker 1" class="speaker-image">
                 <div class="speaker-info">
-                    <h3>Speaker 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nesciunt a, officiis magni neque fugit maiores voluptas cupiditate eaque. Laboriosam aut magni accusamus labore pariatur odio? Magni velit adipisci aspernatur cum ratione nisi, porro impedit, quisquam maxime qui asperiores assumenda delectus quam facere aliquid optio cumque earum, nesciunt minima eius!</p>
+                    <h3>Gaurav Chintamani</h3>
+                    <p>A music producer, audio engineer, musician, and educator, Gaurav has been immersed in the world of sound since 2002. As the founder of Quarter Note Studios, he has composed and produced music for jingles, films, documentaries, theatre, and podcasts, collaborating with a diverse range of artists and commercial clients.</p>
                 </div>
             </div>
             <div class="speaker">
-                <img src="Speaker1.avif" alt="Speaker 2" class="speaker-image">
+                <img src="speakers/2.png" alt="Speaker 2" class="speaker-image">
                 <div class="speaker-info">
-                    <h3>Speaker 2</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quas aspernatur a ipsam voluptatum alias sequi neque? Commodi, accusamus. Alias, fuga? Dolores eos fuga incidunt voluptatem qui eaque temporibus corporis?</p>
+                    <h3>Anubhav Jain</h3>
+                    <p>A Goldman Sachs investment banker to a prominent sports commentator is a testament to reinvention. After his H-1B visa application was denied, he pivoted from a high-powered finance career to sports storytelling, joining ESPNcricinfo during the 2019 Cricket World Cup. With no formal media training, he quickly became a leading voice in cricket, working with networks like Star Sports, Sony Sports, and Cricbuzz, covering major events like the IPL and ICC World Cups. His story highlights the power of following one's passion and embracing unexpected opportunities.</p>
                 </div>
             </div>
-            <!-- Add more speakers as needed -->
+            <div class="speaker">
+                <img src="speakers/4.png" alt="Speaker 3" class="speaker-image">
+                <div class="speaker-info">
+                    <h3>Anusmita Bhattacharyya</h3>
+                    <p>She has performed in numerous concerts from the age of 9 with a Western chamber orchestra and has attained certifications from the Associated Board of the Royal Schools of Music (ABRSM). She is also a non-fiction writer having headed the journalism department of Redefy Kolkata, an organisation run by teens for teens. Her journey with bipolar disorder has motivated her to talk about mental health among a wider audience.</p>
+                </div>
+            </div>
+            <div class="speaker">
+                <img src="speakers/3.png" alt="Speaker 4" class="speaker-image">
+                <div class="speaker-info">
+                    <h3>Ishan Shanavas</h3>
+                    <p>Ishan’s book - The Light of Wilder Things - traces his journey exploring India’s wild landscapes as a teenager. He has authored two wildlife field guides, and has contributed to publications like Sanctuary Asia, Nature in Focus, RoundGlass Sustain, and Wildlife SOS. He writes regularly on his website and his weekly newsletter—The Owlet</p>
+                </div>
+            </div>
+            <div class="speaker">
+                <img src="speakers/5.png" alt="Speaker 5" class="speaker-image">
+                <div class="speaker-info">
+                    <h3>Pubarun Basu</h3>
+                    <p>As the first Indian photographer to win the Sony Youth Photographer of the Year Award and a Forbes 30U30 honoree, Pubarun Basu has conceptualised ideas such as the Dhara and mobilised over 500+ underprivileged youth to stand for environmental conservation. His work has received recognition from UNESCO, BBC, CNN and more.</p>
+                </div>
+            </div>
         </div>
     </div>
-
     <style>
         .speaker {
             display: flex;
@@ -104,20 +122,32 @@
             margin-bottom: 10%; /* Increased margin for spacing */
         }
 
+        .speaker:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
         .speaker-image {
-            flex: 1 1 50%;
-            max-width: 50%;
+            flex: 1 1 40%; /* Reduced max-width to 40% */
+            max-width: 40%;
             object-fit: cover;
         }
 
         .speaker-info {
-            flex: 1 1 50%;
-            max-width: 50%;
+            flex: 1 1 60%; /* Increased max-width to 60% */
+            max-width: 60%;
             padding: 20px;
+        }
+
+        .speaker-info h3 {
+            color: red; /* Make the speaker name red */
         }
 
         @media (max-width: 768px) {
             .speaker {
+                flex-direction: column;
+            }
+
+            .speaker:nth-child(even) {
                 flex-direction: column;
             }
 
@@ -127,29 +157,30 @@
         }
     </style>
 
-    <div id="team" class="content-section">
-        <div class="container"></div>
-            <div class="team-section">
-                <h3>Leads</h3>
-                <div class="cards">
-                    <div class="card">
-                        <img src="heads/dakshin.JPG" alt="Lead 1" class="card-image">
-                        <div class="card-content">
-                            <h3>Dakshin Vinod</h3>
-                        </div>
+<div id="team" class="content-section">
+    <div class="container">
+        <div class="team-section">
+            <h3>Leads</h3>
+            <div class="cards">
+                <div class="card">
+                    <img src="heads/dakshin.JPG" alt="Lead 1" class="card-image">
+                    <div class="card-content">
+                        <h3>Dakshin Vinod</h3>
                     </div>
-                    <div class="card">
-                        <img src="heads/Tia Garg.JPG" alt="Lead 2" class="card-image">
-                        <div class="card-content">
-                            <h3>Tia Garg</h3>
-                        </div>
+                </div>
+                <div class="card">
+                    <img src="heads/Tia Garg.JPG" alt="Lead 2" class="card-image">
+                    <div class="card-content">
+                        <h3>Tia Garg</h3>
                     </div>
                 </div>
             </div>
-
-            <h3 style="text-align: center; margin-bottom: 15px;">Marketing HODs</h3>
+        </div>
+        
+        <div class="team-section">
+            <h3>Marketing HODs</h3>
             <div class="cards">   
-            <div class="card">
+                <div class="card">
                     <img src="heads/Anusha.jpg" alt="Marketing Member 1" class="card-image">
                     <div class="card-content">
                         <h3>Anusha Sharma</h3>
@@ -161,10 +192,11 @@
                         <h3>Gahan Sindhu Naren</h3>
                     </div>
                 </div>
-                <!-- Add more team members as needed -->
-            </div> 
-
-            <h3 style="text-align: center; margin-bottom: 15px;">Events HODs</h3>
+            </div>
+        </div>
+        
+        <div class="team-section">
+            <h3>Events HODs</h3>
             <div class="cards">
                 <div class="card">
                     <img src="heads/Ishaani.jpg" alt="Events Member 1" class="card-image">
@@ -178,45 +210,46 @@
                         <h3>Aadya Sood</h3>
                     </div>
                 </div>
-                <!-- Add more team members as needed -->
             </div>
-
-            <h3 style="text-align: center; margin-bottom: 15px;">Curation HODs</h3>
+        </div>
+        
+        <div class="team-section">
+            <h3>Curation HODs</h3>
             <div class="cards">   
-            <div class="card">
-                    <img src="heads/divya.png" alt="Marketing CO-HOD" class="card-image">
+                <div class="card">
+                    <img src="heads/divya.png" alt="Curation HOD 1" class="card-image">
                     <div class="card-content">
                         <h3>Divya Sarawgi</h3>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="heads/sneha.jpg" alt="Marketing Member 2" class="card-image">
+                    <img src="heads/sneha.jpg" alt="Curation HOD 2" class="card-image">
                     <div class="card-content">
                         <h3>Sneha Mishra</h3>
                     </div>
                 </div>
-            </div> 
-
-            <h3 style="text-align: center; margin-bottom: 15px;">Finance HODs</h3>
+            </div>
+        </div>
+        
+        <div class="team-section">
+            <h3>Finance HODs</h3>
             <div class="cards">   
-            <div class="card">
-                    <img src="heads/krish.jpg" alt="Marketing CO-HOD" class="card-image">
+                <div class="card">
+                    <img src="heads/krish.jpg" alt="Finance HOD 1" class="card-image">
                     <div class="card-content">
                         <h3>Krish Sanghvi</h3>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="heads/neeraja.jpg" alt="Marketing Member 2" class="card-image">
+                    <img src="heads/neeraja.jpg" alt="Finance HOD 2" class="card-image">
                     <div class="card-content">
                         <h3>Neeraja Asnani</h3>
                     </div>
                 </div>
-            </div> 
-
+            </div>
         </div>
     </div>
 </div>
-
     <div id="contact" class="content-section">
         <div class="container">
             <h2>Contact Us</h2>
@@ -258,6 +291,29 @@
         <p>Designed by Siddhant Malik</p>
     </div>
 </footer>
+
+<!-- Add this code before the closing body tag -->
+<div id="ticket-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Registration Form</h2>
+        <form id="ticket-form" action="https://submit-form.com/9TmknSgkg" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+            
+            <button type="submit" class="submit-button">Send</button>
+        </form>
+        <div id="form-success" class="form-message">
+            Thank you! Your interest has been successfully registered.
+        </div>
+    </div>
+</div>
 
     <script>
         function countdown() {
@@ -312,6 +368,34 @@ document.querySelectorAll('.nav-button').forEach(button => {
         document.querySelector('.burger-menu').classList.remove('active');
         document.querySelector('.nav-links').classList.remove('active');
     });
+});
+
+// Modal functionality
+const modal = document.getElementById("ticket-modal");
+const buyButton = document.querySelector(".buy-tickets-button");
+const closeButton = document.querySelector(".close-modal");
+const ticketForm = document.getElementById("ticket-form");
+const formSuccess = document.getElementById("form-success");
+
+// Replace the link with modal open functionality
+buyButton.addEventListener("click", function(e) {
+    e.preventDefault();
+    modal.style.display = "block";
+    document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
+});
+
+// Close modal when clicking the X
+closeButton.addEventListener("click", function() {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto"; // Re-enable scrolling
+});
+
+// Close modal when clicking outside the modal content
+window.addEventListener("click", function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto"; // Re-enable scrolling
+    }
 });
     </script>
 </body>
