@@ -595,6 +595,26 @@ footer {
         color: white;
         z-index: 1001;
     }
+
+        .modal-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #ticket-form label {
+        font-size: 14px;
+    }
+
+    #ticket-form input,
+    #ticket-form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
 }
 
     .burger-menu.active .bar:nth-child(1) {
