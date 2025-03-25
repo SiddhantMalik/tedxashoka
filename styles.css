@@ -234,7 +234,7 @@ p {
         gap: 10px;
     }
     .timer-box {
-        min-width: 70px;
+        min-width: auto;
         padding: 10px;
     }
     .timer-value {
@@ -256,7 +256,7 @@ p {
         padding: 10px;
     }
     .timer-box {
-        min-width: 60px;
+        min-width: auto;
         padding: 8px;
     }
     .timer-value {
